@@ -7,8 +7,6 @@ defmodule ElixirMicroserviceKafka.Application do
 
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      ElixirMicroserviceKafka.Repo,
       # Start the Telemetry supervisor
       ElixirMicroserviceKafkaWeb.Telemetry,
       # Start the PubSub system

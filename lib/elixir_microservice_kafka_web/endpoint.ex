@@ -7,7 +7,7 @@ defmodule ElixirMicroserviceKafkaWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_elixir_microservice_kafka_key",
-    signing_salt: "07kmi43A"
+    signing_salt: "nwB37EA6"
   ]
 
   socket "/socket", ElixirMicroserviceKafkaWeb.UserSocket,
@@ -30,7 +30,6 @@ defmodule ElixirMicroserviceKafkaWeb.Endpoint do
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :elixir_microservice_kafka
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,

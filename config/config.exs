@@ -7,16 +7,13 @@
 # General application configuration
 use Mix.Config
 
-config :elixir_microservice_kafka,
-  ecto_repos: [ElixirMicroserviceKafka.Repo]
-
 # Configures the endpoint
 config :elixir_microservice_kafka, ElixirMicroserviceKafkaWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "gkEXY5ZHICnr5VQMmNiV42/R65DTbDng1dkmavRu93u5kkc12UQrKeTX9vx73JB4",
+  secret_key_base: "2HBaeNjQhHl9LjEVQSsHxr7X6rWlL9drsxAuDxeN3M8Q1AtVWu1lab5pFGCbvWVt",
   render_errors: [view: ElixirMicroserviceKafkaWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: ElixirMicroserviceKafka.PubSub,
-  live_view: [signing_salt: "ClF4FJlE"]
+  live_view: [signing_salt: "eI3meQR9"]
 
 # Configures Elixir's Logger
 config :logger, :console,
